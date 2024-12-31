@@ -1,21 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Purefunction from './lec3112/purefunction'
-// import MyComponent from './lec3112/combined'
-// import Component1 from './lect2412/component1'
-// import InpuutTest from './Component3'
-// import ClassTimeTable from './lect2412/class_timetable'
-//import StateMerge from './lect2412/state_managment'
+import MyButton2 from './lec3112/purefunc2'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <Component1/> */}
-    {/* <InpuutTest/> */}
-    {/* <ClassTimeTable/> */}
-    {/* <StateMerge/> */}
-    {/* <MyComponent/> */}
-    <Purefunction abc={true} xyz="How" />
-    <Purefunction abc={true} xyz="Are" />
-    <Purefunction abc={true} xyz="You..?" />
+    <MyButton2/>
+    <MyButton2 abc={true} def="Hellooo"/>
+    <MyButton2 abc={true} />
+    <MyButton2 def="Good Morning..."/>
   </StrictMode>,
 )
