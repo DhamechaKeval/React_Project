@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import StateExample2 from './lec0601/hookexmp2'
+import StateExample3 from './lec0601/hookexmp3'
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <StateExample2 />
+    <StateExample3 />
   </StrictMode>,
 )
