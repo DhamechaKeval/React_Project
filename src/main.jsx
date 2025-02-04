@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import UserContextExample from './lec0302/file4'
+import App from './lec0402/file3'
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <UserContextExample/>
+    <App/>
   </StrictMode>,
 )
