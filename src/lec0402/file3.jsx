@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { CalculateInterest } from './file1';
-import { Page1, Page2, Page3 ,Page4} from './file2';
+import { Principle , Interest , Duration , Result} from './file2';
 
 function SelectPage({ i }) {
-    const Page = [Page1, Page2, Page3, Page4][i];
+    const Page = [Principle , Interest , Duration , Result][i];
     return <Page />;
 }
 
@@ -12,10 +12,10 @@ export default function App() {
     return (
         <CalculateInterest>
             <div>
-                <button onClick={() => setCurrentPage(0)} disabled={currentPage === 0}>Page 1</button>
-                <button onClick={() => setCurrentPage(1)} disabled={currentPage === 1}>Page 2</button>
-                <button onClick={() => setCurrentPage(2)} disabled={currentPage === 2}>Page 3</button>
-                <button onClick={() => setCurrentPage(3)} disabled={currentPage === 3}>Page 4</button>
+                <button onClick={() => setCurrentPage(0)} disabled={currentPage === 0}>Principle amt</button>
+                <button onClick={() => setCurrentPage(1)} disabled={currentPage === 1}>Interest</button>
+                <button onClick={() => setCurrentPage(2)} disabled={currentPage === 2}>Duration</button>
+                <button onClick={() => setCurrentPage(3)} disabled={currentPage === 3}>Calculate Interest</button>
                 <SelectPage i={currentPage} />
             </div>
         </CalculateInterest>
