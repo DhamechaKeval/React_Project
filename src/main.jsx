@@ -1,10 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './lec0402/file3'
+import ReducerExmp from './lec2402/reducerexample'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App/>
+    <ReducerExmp />
   </StrictMode>,
 )
